@@ -11,7 +11,11 @@ body {
 }
 
 .top {
- border-bottom: 2px solid #000;
+ 	border-bottom: 2px solid #000;
+}
+
+.strike {
+	text-decoration: line-through;
 }
 
 #centerContent {
@@ -47,10 +51,11 @@ body {
 	display: flex;
 	justify-content: center;
 	margin-top: 2.33em;
+	flex-wrap: wrap;
 }
 
 #access .access-box {
-	width: 334px;
+	width: 354px;
 	height: auto;
 	margin-right: 1.33em;
 }
@@ -59,11 +64,12 @@ body {
 	width: 314px;
 	height: 179px;
 	border-radius: 0.4em;
-	display: inline-block;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 	color: #D8D8D8;
-	font-size: 1.734em;
-	padding-top: 0.96em;
-	padding-left: 0.77em;
+	font-size: 1.7em;
+	padding: 0.96em 0.77em 0.77em 0.77em;
 }
 
 #access .basic {
@@ -79,7 +85,7 @@ body {
 }
 
 #access .title {
-	margin-bottom: 1.92em;
+	flex-grow: 1;
 }
 
 #access .rate,
@@ -88,10 +94,24 @@ body {
 }
 
 #access .action {
-	background-color: #81B5F4;
-	width: 100px;
+	background: rgba(255,255,255, 0.4);
+	width: 100%;
 	text-align: center;
 	color: #D8D8D8;
+	font-size: 0.53em;
+	line-height: 0.69em;
+	text-transform: uppercase;
+	border-radius: 4px;
+}
+
+#access .action span {
+	color: white;
+	padding: 0.71em 0;
+	display: block;
+}
+
+#access .rate span:last-child {
+	color: white;
 }
 
 #bottom-info {
