@@ -1,5 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	font-family: Helvetica;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 15px;
+	/*max-width: 1024px;
+	margin: 0 auto;*/
 }
 
 .top {
@@ -11,17 +19,79 @@ body {
 }
 
 #centerContent div {
-	font-size: 15px;
-	padding: 30px 0;
+	font-size: 1em;
+	padding: 1em 0;
 }
 
 #centerContent hr {
 	width: 100px;
+	margin: 0 auto;
+	margin-bottom: 4em;
+}
+
+#centerContent p {
+	font-size: 1.734em;
+	line-height: 1.5em;
+}
+
+#centerContent .choice {
+	padding-top: 0.667em;
+}
+
+#centerContent p.small {
+	font-size: 1em;
+	line-height: 1.2em;
 }
 
 #access {
 	display: flex;
 	justify-content: center;
+	margin-top: 2.33em;
+}
+
+#access .access-box {
+	width: 334px;
+	height: auto;
+	margin-right: 1.33em;
+}
+
+#access .box {
+	width: 314px;
+	height: 179px;
+	border-radius: 0.4em;
+	display: inline-block;
+	color: #D8D8D8;
+	font-size: 1.734em;
+	padding-top: 0.96em;
+	padding-left: 0.77em;
+}
+
+#access .basic {
+	background-color: #2E84ED;
+}
+
+#access .all {
+	background-color: #0F4A92;
+}
+
+#access .home-all {
+	background-color: #333;
+}
+
+#access .title {
+	margin-bottom: 1.92em;
+}
+
+#access .rate,
+#access .action {
+	font-size: 0.77em;
+}
+
+#access .action {
+	background-color: #81B5F4;
+	width: 100px;
+	text-align: center;
+	color: #D8D8D8;
 }
 
 #bottom-info {
