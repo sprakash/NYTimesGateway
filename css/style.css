@@ -18,6 +18,10 @@ body {
 	text-decoration: line-through;
 }
 
+.fas { 
+	transform: scale(.6,.7);
+}
+
 #centerContent {
 	text-align: center;
 }
@@ -60,6 +64,10 @@ body {
 	margin-right: 1.33em;
 }
 
+#access .access-box:last-child {
+	margin-right: 0;
+}
+
 #access .box {
 	width: 314px;
 	height: 179px;
@@ -69,7 +77,8 @@ body {
 	flex-direction: column;
 	color: #D8D8D8;
 	font-size: 1.7em;
-	padding: 0.96em 0.77em 0.77em 0.77em;
+	padding: 0.98em 0.78em 0.78em 0.78em;
+	margin-bottom: 0.98em;
 }
 
 #access .basic {
@@ -86,6 +95,15 @@ body {
 
 #access .title {
 	flex-grow: 1;
+}
+
+#access .rate {
+	line-height: 1.2em;
+	margin-bottom: .5em;
+}
+
+#access .rate span:last-child {
+	color: white;
 }
 
 #access .rate,
@@ -106,15 +124,65 @@ body {
 
 #access .action span {
 	color: white;
-	padding: 0.71em 0;
+	padding: 0.74em 0;
 	display: block;
 }
 
-#access .rate span:last-child {
-	color: white;
+#access .access-detail {
+	font-size: 1.067em;
+	color: #4A4A4A;
+	margin-bottom: 1.87em;
+	display: flex;
+	line-height: 1.375em;
+	width: 83%;
+}
+
+#access .access-detail .check {
+	margin-right: 0.5em;
+	margin-top: .125em;
+}
+
+#access .access-detail p {
+	flex-wrap: wrap;
 }
 
 #bottom-info {
 	display: flex;
 	justify-content: center;
+}
+
+#bottom-info div {
+	width: 480px;
+	height: 134px;
+	background: rgba(74,74,74,.10);
+	border-radius: 3px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 1.33em 1.33em;
+	font-size: 1.066em;
+	line-height: 1.466em;
+	margin-bottom: 4.33em;
+}
+
+#bottom-info a {
+	color: #2E84ED;
+}
+
+
+#bottom-info div:first-child {
+	margin-right: 1.33em;
+}
+
+footer a {
+	border-right: 1px solid black;
+    padding-right: 0.7em;
+    margin-right: 0.5em;
+    color: black;
+    font-size: 0.866em;
+}
+
+footer a:last-child {
+	border-right: 0;
+	margin-right: 0;
 }
