@@ -1,3 +1,11 @@
+$desktopBaseFont: 15px;
+$accessBoxFontColor: #D8D8D8;
+$accessBasicBgColor: #2E84ED;
+$accessAllBgColor: #0F4A92;
+$accessHomeAllBgColor: #333;
+$accessDetailFontColor: #4A4A4A;
+$moreInfoLinkFontColor: #2E84ED;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,7 +13,7 @@
 
 body {
 	font-family: Helvetica Neue,Arial,sans-serif;
-	font-size: 15px;
+	font-size: $desktopBaseFont;
 }
 
 .top {
@@ -85,22 +93,22 @@ body {
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
-		color: #D8D8D8;
+		color: $accessBoxFontColor;
 		font-size: 1.7em;
 		padding: 0.98em 0.78em 0.78em 0.78em;
 		margin-bottom: 0.98em;
 	}
 
 	.basic {
-		background-color: #2E84ED;
+		background-color: $accessBasicBgColor;
 	}
 
 	.all {
-		background-color: #0F4A92;
+		background-color: $accessAllBgColor;
 	}
 
 	.home-all {
-		background-color: #333;
+		background-color: $accessHomeAllBgColor;
 	}
 	
 	.title {
@@ -125,7 +133,7 @@ body {
 		background: rgba(255,255,255, 0.4);
 		width: 100%;
 		text-align: center;
-		color: #D8D8D8;
+		color: $accessBoxFontColor;
 		font-size: 0.53em;
 		line-height: 0.69em;
 		text-transform: uppercase;
@@ -141,7 +149,7 @@ body {
 
 	.access-detail {
 		font-size: 1.067em;
-		color: #4A4A4A;
+		color: $accessDetailFontColor;
 		margin-bottom: 1.87em;
 		display: flex;
 		line-height: 1.375em;
@@ -165,7 +173,7 @@ body {
 	flex-wrap: wrap;
 
 	div {
-		width: 480px;
+		max-width: 480px;
 		height: 134px;
 		background: rgba(74,74,74,.10);
 		border-radius: 3px;
@@ -189,7 +197,7 @@ body {
 
 
 	a {
-		color: #2E84ED;
+		color: $moreInfoLinkFontColor;
 	}
 }
 
