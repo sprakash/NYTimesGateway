@@ -5,7 +5,7 @@
 body {
   font-family: Helvetica Neue,Arial,sans-serif;
   font-size: 15px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     body {
       font-size: 14px; } }
 
@@ -20,36 +20,39 @@ body {
 
 #centerContent {
   text-align: center; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     #centerContent {
       text-align: left;
       padding: 0 20px; } }
   #centerContent div {
     font-size: 1em;
     padding: 1em 0; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       #centerContent div {
         line-height: 1.142em;
         padding: 1em 0 0; } }
   #centerContent hr {
     width: 100px;
     margin: 0 auto 4em; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       #centerContent hr {
         margin: 2em 0 2em 0; } }
   #centerContent p {
     font-size: 1.734em;
     line-height: 1.5em; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       #centerContent p {
         font-size: 1.28em;
         line-height: 1.42em; } }
   #centerContent .small {
     font-size: 1em;
     line-height: 1.2em; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       #centerContent .small {
         margin-bottom: 1.42em; } }
+    @media only screen and (max-width: 767px) {
+      #centerContent .small span {
+        opacity: .5; } }
   #centerContent .choice {
     padding-top: 0.667em; }
 
@@ -57,18 +60,18 @@ body {
   max-width: 1280px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 35px 30px; }
-  @media only screen and (max-width: 768px) {
+  padding: 0 30px; }
+  @media only screen and (max-width: 767px) {
     #content-wrap {
       padding: 0; } }
 
 #access {
   display: flex;
   justify-content: center;
-  margin-top: 2.33em;
+  margin-top: 1em;
   flex-direction: row;
   box-sizing: border-box; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     #access {
       flex-direction: column;
       align-items: center;
@@ -76,7 +79,7 @@ body {
   #access .access-box {
     margin-right: 1.33em;
     width: 30%; }
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 767px) {
       #access .access-box {
         width: 90%;
         margin-right: 0; } }
@@ -89,7 +92,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     color: #D8D8D8;
-    font-size: 1.7em;
+    font-size: 1.5em;
     padding: 0.98em 0.78em 0.78em 0.78em;
     margin-bottom: 0.98em; }
   #access .basic {
@@ -139,7 +142,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 30px; }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 767px) {
     #bottom-info-wrap {
       padding: 0 20px; } }
 
@@ -159,20 +162,18 @@ body {
     line-height: 1.466em;
     margin-bottom: 4.33em;
     width: 42%; }
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 767px) {
       #bottom-info div {
-        margin-bottom: 1em; } }
-    @media only screen and (max-width: 768px) {
-      #bottom-info div {
+        margin-bottom: 1em;
         width: 100%; } }
     #bottom-info div:first-child {
       margin-right: 0.66em; }
-      @media only screen and (max-width: 320px) {
+      @media only screen and (max-width: 767px) {
         #bottom-info div:first-child {
           margin-right: 0; } }
     #bottom-info div:last-child {
       margin-left: 0.66em; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 767px) {
         #bottom-info div:last-child {
           margin-left: 0; } }
   #bottom-info a {
@@ -188,7 +189,7 @@ footer {
     margin-right: 0.5em;
     color: black;
     font-size: 0.866em; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       footer #footer a {
         font-size: 0.92em;
         line-height: 1.5em; } }

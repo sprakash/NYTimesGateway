@@ -1,6 +1,6 @@
 $desktopBreakpoint: 1024px;
-$mobileBreakpoint: 768px;
-$mobileSmallBreakpoint: 320px;
+$mobileBreakpoint: 767px;
+$mobileSmallBreakpoint: 767px;
 
 $desktopBaseFont: 15px;
 $mobileBaseFont: 14px;
@@ -86,6 +86,13 @@ body {
 		  margin-bottom: 1.42em;
 		}
 
+		span {
+			@media only screen and (max-width: $mobileBreakpoint) {
+				opacity: .5;
+			}
+
+		}
+
 	}
 
 	 .choice {
@@ -97,7 +104,7 @@ body {
 	max-width: 1280px;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 35px 30px;
+    padding: 0 30px;
 
     @media only screen and (max-width: $mobileBreakpoint) {
     	padding:0;
@@ -108,7 +115,7 @@ body {
 #access {
 	display: flex;
     justify-content: center;
-    margin-top: 2.33em;
+    margin-top: 1em;
     flex-direction: row;
     box-sizing: border-box;
 
@@ -122,7 +129,7 @@ body {
 		margin-right: 1.33em;
 		width: 30%;
 
-		@media only screen and (max-width: $mobileSmallBreakpoint) {
+		@media only screen and (max-width: $mobileBreakpoint) {
 			width: 90%;
 			margin-right: 0;
 		}
@@ -139,7 +146,7 @@ body {
 		justify-content: space-between;
 		flex-direction: column;
 		color: $accessBoxFontColor;
-		font-size: 1.7em;
+		font-size: 1.5em;
 		padding: 0.98em 0.78em 0.78em 0.78em;
 		margin-bottom: 0.98em;
 	}
@@ -218,7 +225,7 @@ body {
 	margin: 0 auto;
 	padding: 0 30px;
 
-	@media only screen and (max-width: $mobileSmallBreakpoint) {
+	@media only screen and (max-width: $mobileBreakpoint) {
 		padding: 0 20px;
 	}
 
@@ -242,18 +249,15 @@ body {
 		margin-bottom: 4.33em;
 		width: 42%;
 
-		@media only screen and (max-width: $mobileSmallBreakpoint) {
-			margin-bottom: 1em;
-		}
-
 		@media only screen and (max-width: $mobileBreakpoint) {
+			margin-bottom: 1em;
 			width: 100%;
 		}
 
 		&:first-child {
 			margin-right: 0.66em;
 
-			@media only screen and (max-width: $mobileSmallBreakpoint) {
+			@media only screen and (max-width: $mobileBreakpoint) {
 				margin-right: 0;
 			}
 
