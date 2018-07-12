@@ -137,6 +137,27 @@ body {
 		&:last-child {
 			margin-right: 0;
 		}
+
+		.expand-collapse {
+			display: none; 
+
+			@media only screen and (max-width: $mobileBreakpoint) {
+			    color: white;
+    			text-align: center;
+    			display: block;
+    			font-size: 0.76em;
+    			margin-bottom: .1em;
+    		}
+
+    		span {
+
+    			@media only screen and (max-width: $mobileBreakpoint) {
+    				margin-left: .5em;
+    			}
+
+    		}
+
+		}
 	}
 
 	.box {
@@ -191,6 +212,10 @@ body {
 		text-transform: uppercase;
 		border-radius: 4px;
 
+		@media only screen and (max-width: $mobileBreakpoint) {
+			margin-bottom: 2em;
+		}
+
 		a {
 			color: white;
 			padding: 1em 0;
@@ -206,6 +231,14 @@ body {
 		display: flex;
 		line-height: 1.375em;
 		width: 83%;
+
+		@media only screen and (max-width: $mobileBreakpoint) {
+			opacity: 0;
+			display: none;
+			width: 74%;
+			margin-left: 10px;
+		}
+
 
 		.check {
 			margin-right: 0.5em;
@@ -226,7 +259,7 @@ body {
 	padding: 0 30px;
 
 	@media only screen and (max-width: $mobileBreakpoint) {
-		padding: 0 20px;
+		padding: 30px 20px;
 	}
 
 }

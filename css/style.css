@@ -85,6 +85,18 @@ body {
         margin-right: 0; } }
     #access .access-box:last-child {
       margin-right: 0; }
+    #access .access-box .expand-collapse {
+      display: none; }
+      @media only screen and (max-width: 767px) {
+        #access .access-box .expand-collapse {
+          color: white;
+          text-align: center;
+          display: block;
+          font-size: 0.76em;
+          margin-bottom: .1em; } }
+      @media only screen and (max-width: 767px) {
+        #access .access-box .expand-collapse span {
+          margin-left: .5em; } }
   #access .box {
     height: 179px;
     border-radius: 0.4em;
@@ -119,6 +131,9 @@ body {
     line-height: 0.69em;
     text-transform: uppercase;
     border-radius: 4px; }
+    @media only screen and (max-width: 767px) {
+      #access .action {
+        margin-bottom: 2em; } }
     #access .action a {
       color: white;
       padding: 1em 0;
@@ -131,6 +146,12 @@ body {
     display: flex;
     line-height: 1.375em;
     width: 83%; }
+    @media only screen and (max-width: 767px) {
+      #access .access-detail {
+        opacity: 0;
+        display: none;
+        width: 74%;
+        margin-left: 10px; } }
     #access .access-detail .check {
       margin-right: 0.5em;
       margin-top: .125em; }
@@ -144,7 +165,7 @@ body {
   padding: 0 30px; }
   @media only screen and (max-width: 767px) {
     #bottom-info-wrap {
-      padding: 0 20px; } }
+      padding: 30px 20px; } }
 
 #bottom-info {
   display: flex;

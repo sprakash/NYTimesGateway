@@ -45,10 +45,22 @@ module.exports = function (grunt) {
 			}
 		},
 
+		uglify: {
+			build : {
+				src : ["js/main.js"],
+				dest : "js/main.min.js"
+			}
+		},
+
 		watch:{
 			css:{
 				files: '**/*.scss',
 				tasks: ['sass', 'postcss', 'cssmin']
+			},
+			js:{
+				files: '**/*.js',
+				tasks: 'uglify'
+
 			}
 		}
 
@@ -59,9 +71,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 
 	//Register Grunt tasks
-	grunt.registerTask('default',['sass', 'cssmin', 'watch']);
+	grunt.registerTask('default',['sass', 'cssmin', 'uglify', 'watch']);
 
 };
