@@ -1,3 +1,6 @@
+$desktopBreakpoint: 1024px;
+$mobileBreakpoint: 768px;
+
 $desktopBaseFont: 15px;
 $accessBoxFontColor: #D8D8D8;
 $accessBasicBgColor: #2E84ED;
@@ -5,6 +8,18 @@ $accessAllBgColor: #0F4A92;
 $accessHomeAllBgColor: #333;
 $accessDetailFontColor: #4A4A4A;
 $moreInfoLinkFontColor: #2E84ED;
+
+/*
+//mobile
+@media only screen (max-width: 768px) {
+
+}
+
+//between mobile and desktop
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+}*/
+
 
 * {
 	margin: 0;
@@ -61,12 +76,7 @@ body {
 	max-width: 1280px;
     box-sizing: border-box;
     margin: 0 auto;
-}
-
-#bottom-info-wrap {
-	max-width: 1280px;
-	box-sizing: border-box;
-	margin: 0 auto;
+    padding: 35px 30px;
 }
 
 #access {
@@ -167,6 +177,13 @@ body {
 	}
 }
 
+#bottom-info-wrap {
+	max-width: 1280px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
 #bottom-info {
 	display: flex;
 	justify-content: center;
@@ -184,6 +201,7 @@ body {
 		font-size: 1.066em;
 		line-height: 1.466em;
 		margin-bottom: 4.33em;
+		width: 42%;
 
 		&:first-child {
 			margin-right: 0.66em;
@@ -205,6 +223,7 @@ body {
 footer {
 	max-width: 1069px;
 	margin: 0 auto;
+	padding: 0 5%;
 	
 	#footer a {
 		border-right: 1px solid black;

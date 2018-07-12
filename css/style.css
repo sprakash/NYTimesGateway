@@ -1,3 +1,13 @@
+/*
+//mobile
+@media only screen (max-width: 768px) {
+
+}
+
+//between mobile and desktop
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+}*/
 * {
   margin: 0;
   padding: 0; }
@@ -36,12 +46,8 @@ body {
 #content-wrap {
   max-width: 1280px;
   box-sizing: border-box;
-  margin: 0 auto; }
-
-#bottom-info-wrap {
-  max-width: 1280px;
-  box-sizing: border-box;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 35px 30px; }
 
 #access {
   display: flex;
@@ -108,6 +114,12 @@ body {
     #access .access-detail p {
       flex-wrap: wrap; }
 
+#bottom-info-wrap {
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px; }
+
 #bottom-info {
   display: flex;
   justify-content: center;
@@ -123,7 +135,8 @@ body {
     padding: 1.33em 1.33em;
     font-size: 1.066em;
     line-height: 1.466em;
-    margin-bottom: 4.33em; }
+    margin-bottom: 4.33em;
+    width: 42%; }
     #bottom-info div:first-child {
       margin-right: 0.66em; }
     #bottom-info div:last-child {
@@ -133,7 +146,8 @@ body {
 
 footer {
   max-width: 1069px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 5%; }
   footer #footer a {
     border-right: 1px solid black;
     padding-right: 0.7em;
